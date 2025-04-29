@@ -9,7 +9,8 @@
 
     <!-- Cabeçalho padrão (não alterar) -->
     <header class="topo">
-        <h1 class="titulo-principal">ReciclaFácil</h1>
+        <!-- Título com link para a página inicial -->
+        <h1 class="titulo-principal"><a href="index.html" class="link-titulo">ReciclaFácil</a></h1>
         <nav class="menu-superior">
             <a href="perfil.html" class="link-menu">Início</a>
             <a href="registro.html" class="link-menu">Registrar Descarte</a>
@@ -23,23 +24,25 @@
     <main class="registro-main">
         <h2 class="titulo-pagina">Registrar Descarte</h2>
         <p class="subtitulo-pagina">Informe seu descarte e receba pontos</p>
-
-        <form class="formulario-registro">
-            <label class="label-registro">Tipo de material</label>
-            <input type="text" class="input-registro" placeholder="Digite o material">
-
-            <label class="label-registro">Local</label>
-            <input type="text" class="input-registro" placeholder="Digite o local de descarte">
-
-            <label class="label-registro">Data</label>
-            <input type="text" class="input-registro" placeholder="Digite a data do descarte">
-
-            <div class="area-foto">
-                <p>📷 Inserir foto </p>
-            </div>
-
-            <button class="botao-registrar" type="button">Registrar Descarte</button>
-        </form>
+    
+        <div class="card-formulario">
+            <form class="formulario-registro">
+                <label class="label-registro">📦 Tipo de material</label>
+                <input type="text" class="input-registro" placeholder="Ex: Plástico, Papelão, Vidro...">
+    
+                <label class="label-registro">📍 Local</label>
+                <input type="text" class="input-registro" placeholder="Ex: Ponto de coleta XYZ">
+    
+                <label class="label-registro">📅 Data</label>
+                <input type="date" class="input-registro">
+    
+                <div class="area-foto">
+                    <p>🖼️ Inserir foto</p>
+                </div>
+    
+                <button class="botao-registrar" type="button">Registrar Descarte</button>
+            </form>
+        </div>
     </main>
 
 </body>
